@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
 import TopNav from './components/TopNav';
-import RoutesComponent from './components/RoutesComponent';
+import AppRoutes from './AppRoutes';
 
 const App = () => {
   return (
@@ -10,7 +10,7 @@ const App = () => {
         <TopNav />
         <div className="main-container">
           <main>
-            <RoutesComponent />
+            <AppRoutes />
           </main>
         </div>
       </div>

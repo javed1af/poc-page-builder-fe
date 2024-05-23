@@ -1,10 +1,10 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
-import Home from './Home';
-import About from './About';
-import PuckEditorComponent from './PuckEditorComponent';
+import Home from './components/Home';
+import About from './components/About';
+import PuckEditorComponent from './components/PuckEditorComponent';
 
-const RoutesComponent = () => {
+const AppRoutes = () => {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
@@ -14,4 +14,4 @@ const RoutesComponent = () => {
   );
 };
 
-export default RoutesComponent;
+export default AppRoutes;
