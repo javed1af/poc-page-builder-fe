@@ -1,8 +1,7 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
 import TopNav from './components/TopNav';
-import Home from './components/Home';
-import PuckEditorComponent from './components/PuckEditorComponent';
+import RoutesComponent from './components/RoutesComponent';
 
 const App = () => {
   return (
@@ -11,11 +10,7 @@ const App = () => {
         <TopNav />
         <div className="main-container">
           <main>
-            <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/editor" element={<PuckEditorComponent />} />
-              {/* Add more routes for additional pages */}
-            </Routes>
+            <RoutesComponent />
           </main>
         </div>
       </div>
