@@ -16,6 +16,20 @@ const PuckEditorComponent = () => {
           return <h1>{children}</h1>;
         },
       },
+
+      Paragraph: {
+        fields: {
+          text: { type: "text" },
+        },
+        defaultProps: {
+          text: "Paragraph",
+        },
+        render: ({ text }) => (
+          <div style={{ padding: 15 }}>
+            <p>{text}</p>
+          </div>
+        ),
+      },
     },
   };
 
