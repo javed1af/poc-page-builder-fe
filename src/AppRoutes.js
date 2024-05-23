@@ -2,14 +2,16 @@ import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 import Home from './components/Home';
 import About from './components/About';
-import PuckEditorComponent from './components/PuckEditorComponent';
+import PuckEditor from './components/PuckEditor';
+import MySitePage from './components/MySitePage';
 
 const AppRoutes = () => {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/about" element={<About />} />
-      <Route path="/editor" element={<PuckEditorComponent />} />
+      <Route path="/editor" element={<PuckEditor />} />
+      <Route path="/my-site-page" element={<MySitePage />} />
     </Routes>
   );
 };

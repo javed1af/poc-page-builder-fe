@@ -14,7 +14,9 @@ const TopNav = () => {
       <Menu.Item key="editor">
         <Link to="/editor">Puck Editor</Link>
       </Menu.Item>
-      {/* Add more menu items for additional pages */}
+      <Menu.Item key="my-site-page">
+        <Link to="/my-site-page">My Site Page</Link>
+      </Menu.Item>
     </Menu>
   );
 };

@@ -2,7 +2,7 @@ import React from 'react';
 import { Puck } from "@measured/puck";
 import "@measured/puck/dist/index.css";
 
-const PuckEditorComponent = () => {
+const PuckEditor = () => {
   // Create Puck component config
   const config = {
     components: {
@@ -53,4 +53,4 @@ const PuckEditorComponent = () => {
   );
 };
 
-export default PuckEditorComponent;
+export default PuckEditor;
