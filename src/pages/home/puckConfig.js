@@ -1,21 +1,15 @@
 import React from "react";
+import { HeadingBlock } from "../../config/blocks/Heading";
+import { Paragraph } from "../../config/blocks/Paragraph";
 import { VerticalSpace } from "../../config/blocks/VerticalSpace";
+import { Card } from "../../config/blocks/Card";
 
 const getPuckConfig = () => ({
   components: {
-    HeadingBlock: {
-      fields: {
-        children: { type: "text" },
-      },
-      render: ({ children }) => <h1>{children}</h1>,
-    },
-    Paragraph: {
-      fields: {
-        text: { type: "text" },
-      },
-      render: ({ text }) => <p>{text}</p>,
-    },
-    VerticalSpace
+    HeadingBlock,
+    Paragraph,
+    VerticalSpace,
+    Card,
   },
   root: {
     render: ({ children }) => {
