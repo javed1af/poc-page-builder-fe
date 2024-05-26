@@ -31,10 +31,10 @@ const HomePage = () => {
   }, []);
 
   const saveData = async (data) => {
+    console.log('payload: ', data);
     const payload = { data: JSON.stringify(data) };
     try {
       await axios.put('http://localhost:8000/api/contents/home', payload);
-      console.log('Content updated successfully');
     } catch (error) {
       console.error('Error updating content:', error);
     }

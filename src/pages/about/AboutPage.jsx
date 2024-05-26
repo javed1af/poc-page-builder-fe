@@ -15,11 +15,9 @@ const AboutPage = () => {
       try {
         const response = await axios.get('http://localhost:8000/api/contents/about');
         if (response.data) {
-          console.log('response data: ', response.data);
           const contentJson = typeof response.data.data === 'string'
             ? JSON.parse(response.data.data)
             : response.data.data;
-          console.log('contentJson: ', contentJson);
           setContent(contentJson);
         }
       } catch (error) {
@@ -36,7 +34,6 @@ const AboutPage = () => {
     const payload = { data: JSON.stringify(data) };
     try {
       await axios.put('http://localhost:8000/api/contents/about', payload);
-      console.log('Content updated successfully');
     } catch (error) {
       console.error('Error updating content:', error);
     }
