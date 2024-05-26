@@ -2,24 +2,7 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { Puck } from "@measured/puck";
 import "@measured/puck/dist/index.css";
-
-// Puck editor configuration
-const getPuckConfig = () => ({
-  components: {
-    HeadingBlock: {
-      fields: {
-        children: { type: "text" },
-      },
-      render: ({ children }) => <h1>{children}</h1>,
-    },
-    Paragraph: {
-      fields: {
-        text: { type: "text" },
-      },
-      render: ({ text }) => <p>{text}</p>,
-    },
-  },
-});
+import getPuckConfig from './puckConfig';
 
 const HomePage = () => {
   const [content, setContent] = useState({ content: [], root: {}, zones: {} });
