@@ -1,6 +1,7 @@
 import React from "react";
 
 export const HeadingBlock = {
+  label: "Heading Block",
   fields: {
     children: { type: "text" },
   },
