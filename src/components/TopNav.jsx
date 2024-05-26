@@ -12,6 +12,7 @@ const TopNav = () => {
 
   const items = [
     { label: <Link to="/">Home</Link>, key: "/" },
+    { label: <Link to="/home-page-view">Home Page View</Link>, key: "/home-page-view" },
     { label: <Link to="/about">About</Link>, key: "/about" },
   ];
 
