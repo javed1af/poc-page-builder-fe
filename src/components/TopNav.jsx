@@ -13,8 +13,8 @@ const TopNav = () => {
   const items = [
     { label: <Link to="/">Home</Link>, key: "/" },
     { label: <Link to="/about">About</Link>, key: "/about" },
-    { label: <Link to="/editor">Puck Editor</Link>, key: "/editor" },
-    { label: <Link to="/my-site-page">My Site</Link>, key: "/my-site-page" }
+    // { label: <Link to="/editor">Puck Editor</Link>, key: "/editor" },
+    // { label: <Link to="/my-site-page">My Site</Link>, key: "/my-site-page" }
   ];
 
   return (
