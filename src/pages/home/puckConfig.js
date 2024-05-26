@@ -1,3 +1,6 @@
+import React from "react";
+import { VerticalSpace } from "../../config/blocks/VerticalSpace";
+
 const getPuckConfig = () => ({
   components: {
     HeadingBlock: {
@@ -11,6 +14,12 @@ const getPuckConfig = () => ({
         text: { type: "text" },
       },
       render: ({ text }) => <p>{text}</p>,
+    },
+    VerticalSpace
+  },
+  root: {
+    render: ({ children }) => {
+      return <div style={{padding:'20px'}}>{children}</div>;
     },
   },
 });
